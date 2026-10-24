@@ -157,7 +157,7 @@ jobs:
 
     - name: Configure Cargo for Android target
       run: |
-        tar xf boringssl-${{ matrix.abi }}.tar.gz
+        tar xf boringssl.tar.gz
         python scripts/setup_cargo_config.py \
           --force \
           --ndk-root "$ANDROID_SDK_ROOT/ndk/29.0.14206865" \
